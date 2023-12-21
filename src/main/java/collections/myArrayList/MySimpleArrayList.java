@@ -3,8 +3,15 @@ package collections.myArrayList;
 import java.util.Iterator;
 
 public class MySimpleArrayList<E> implements MySimpleList<E> {
+
+    /**
+     * массив элементов E - основа данного списка
+     */
     private E[] values;
 
+    /**
+     * конструктор, в котором инициализируется массив
+     */
     public MySimpleArrayList() {
         values = (E[]) new Object[0];
     }
